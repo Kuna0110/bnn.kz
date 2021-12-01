@@ -1,0 +1,292 @@
+/*Главные стили сайта*/
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+}
+/*Блок с контактами в шапке сайта*/
+.box-contacts {
+    width: 100%;
+    background: #6FCF97;
+}
+.box-contacts-inner {
+    display: flex;
+    justify-content: flex-start;
+}
+.box-contacts span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+    color: #FFF;
+}
+.link-tel {
+    text-decoration: none;
+    color: white;
+}
+.link-tel:hover {
+    text-decoration: underline dotted;
+    color: white;
+}
+.box-contacts .icon {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    color: #FFF;
+}
+@media (max-width: 390px) {
+    .box-contacts span {
+        font-size: 12px;
+    }
+    .box-contacts .icon {
+        font-size: 1rem;
+    }
+}
+/*Блок с слайдом в шапке*/
+.box-tagline {
+    width: 1200px;
+    max-width: 100%;
+    height: 480px;
+    background: url('../assets/slide.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 4px solid #6FCF97;
+}
+.slide-one p {
+    padding: 16rem 3rem 0;
+    width: 700px;
+    max-width: 100%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: #c7b5b5 1px 0 10px;
+}
+.slide-one button {
+    margin: 2rem 3rem 3rem 3rem;
+    padding: 10px 45px 10px 45px;
+    border: none;
+    color: white;
+    background: #6FCF97;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.slide-one button:hover {
+    background: #2ddbdb;
+}
+@media (max-width: 991px) {
+    .box-tagline {
+        height: 350px;
+    }
+    .slide-one p {
+        padding: 10rem 2rem 0;
+        font-size: 1.5rem;
+    }
+    .slide-one button {
+        margin: 2rem 3rem 3rem 2rem;
+        padding: 10px 25px 10px 25px;
+    }
+}
+/*Блок с логотипом и навигацией по сайту*/
+.box-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1200px;
+    max-width: 100%;
+    padding: 20px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+}
+.nav {
+    display: block;
+}
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-right: 5px;
+    border-right: 3px solid #6FCF97;
+    border-bottom: 3px solid #6FCF97;
+    border-radius: 0 0 5px 0;
+}
+/*Главное меню сайта*/
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    list-style: none;
+    line-height: 15px;
+}
+#check {
+    display: none;
+}
+.check-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #6FCF97;
+}
+.close-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #6FCF97;
+}
+@media (max-width: 800px) {
+    .nav {
+        display: none;
+    }
+    .check-btn {
+        display: block;
+    }
+    .close-btn {
+        display: none;
+    }
+    #check:checked ~ .nav {
+        display: flex;
+        position: absolute;
+        top: 70px;
+        right: 5px;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 5px;
+        z-index: 1000;
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100px;
+    }
+    .nav-list li {
+        border-bottom: 1px solid #6FCF97;
+    }
+    #check:checked ~ .close-btn {
+        display: block;
+    }
+    #check:checked ~ .check-btn {
+        display: none;
+    }
+}
+/*Блок с каталогом товара*/
+.box-catalog {
+    position: relative;
+}
+.box-title {
+    text-align: center;
+    padding-top: 20px;
+}
+.box-title p {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    display: inline-block;
+    border-bottom: 2px solid #6FCF97;
+}
+.box-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    width: 1200px;
+    max-width: 100%;
+
+    padding-top: 25px;
+}
+.box-card-item {
+    width: 250px;
+    height: 340px;
+    border: 2px solid #6FCF97;
+}
+.box-card-item:hover {
+    border: 2px solid #db5723;
+    transition: 0.5s;
+}
+.box-img {
+    width: 246px;
+    height: 165px;
+}
+.box-text {
+    padding-top: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.box-text h3 {
+    border-bottom: 1px solid #6FCF97;
+}
+.box-text span {
+    text-align: center;
+}
+.box-text p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.box-text button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 40px 10px 40px;
+    background: #6FCF97;
+    color: #fff;
+}
+.box-text button:hover {
+    background: #2ddbdb;
+}
+/*Блок О нас*/
+.box-about-us {
+    width: 1200px;
+    max-width: 100%;
+    height: 400px;
+    background: url('../assets/about-us.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 4px solid #6FCF97;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-about-us p {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+.box-about-us button {
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 40px 10px 40px;
+    background: #6FCF97;
+    color: #fff;
+}
+.box-about-us button:hover {
+    background: #2ddbdb;
+}
+/*Блок с приемуществом*/
+.box-our-advantages {
+    width: 1200px;
+    max-width: 100%;
+    height: 370px;
+    border-bottom: 4px solid #6FCF97;
+
+
+}
