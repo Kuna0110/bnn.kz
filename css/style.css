@@ -1,3 +1,10 @@
+/*Шрифты*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 /*Главные стили сайта*/
 *, ::after, ::before {
     margin: 0;
@@ -43,14 +50,6 @@ body {
     font-size: 1.3rem;
     color: #FFF;
 }
-@media (max-width: 390px) {
-    .box-contacts span {
-        font-size: 12px;
-    }
-    .box-contacts .icon {
-        font-size: 1rem;
-    }
-}
 /*Блок с слайдом в шапке*/
 .box-tagline {
     width: 1200px;
@@ -62,13 +61,14 @@ body {
     border-bottom: 4px solid #6FCF97;
 }
 .slide-one p {
+    font-family: 'Montserrat', sans-serif;
     padding: 16rem 3rem 0;
     width: 700px;
     max-width: 100%;
     font-size: 1.7rem;
     font-weight: bold;
-    color: #000000;
-    text-shadow: #c7b5b5 1px 0 10px;
+    color: #222;
+    text-shadow: #ffffff 1px 0 10px;
 }
 .slide-one button {
     margin: 2rem 3rem 3rem 3rem;
@@ -82,19 +82,6 @@ body {
 .slide-one button:hover {
     background: #2ddbdb;
 }
-@media (max-width: 991px) {
-    .box-tagline {
-        height: 350px;
-    }
-    .slide-one p {
-        padding: 10rem 2rem 0;
-        font-size: 1.5rem;
-    }
-    .slide-one button {
-        margin: 2rem 3rem 3rem 2rem;
-        padding: 10px 25px 10px 25px;
-    }
-}
 /*Блок с логотипом и навигацией по сайту*/
 .box-nav {
     display: flex;
@@ -105,27 +92,37 @@ body {
     max-width: 100%;
     padding: 20px;
     position: absolute;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.700);
+    z-index: 10000;
 }
+.logo {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 2rem;
+    color: #222;
+    transition: all 0.5s;
+}
+/*Блок навигации сайта*/
 .nav {
     display: block;
 }
-.logo {
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding-right: 5px;
-    border-right: 3px solid #6FCF97;
-    border-bottom: 3px solid #6FCF97;
-    border-radius: 0 0 5px 0;
-}
-/*Главное меню сайта*/
 .nav-list {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
-
+    gap: 30px;
+}
+.nav-list li {
+    font-family: 'Staatliches', sans-serif;
     list-style: none;
-    line-height: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.nav-list a {
+    text-decoration: none;
+    color: #222;
+}
+.nav-list a:hover {
+    color: #db5723;
 }
 #check {
     display: none;
@@ -133,50 +130,14 @@ body {
 .check-btn {
     display: none;
     cursor: pointer;
-    font-size: 1.5rem;
-    color: #6FCF97;
+    font-size: 2rem;
+    color: #222;
 }
 .close-btn {
     display: none;
     cursor: pointer;
-    font-size: 1.5rem;
-    color: #6FCF97;
-}
-@media (max-width: 800px) {
-    .nav {
-        display: none;
-    }
-    .check-btn {
-        display: block;
-    }
-    .close-btn {
-        display: none;
-    }
-    #check:checked ~ .nav {
-        display: flex;
-        position: absolute;
-        top: 70px;
-        right: 5px;
-        padding: 10px;
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 5px;
-        z-index: 1000;
-    }
-    .nav-list {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 100px;
-    }
-    .nav-list li {
-        border-bottom: 1px solid #6FCF97;
-    }
-    #check:checked ~ .close-btn {
-        display: block;
-    }
-    #check:checked ~ .check-btn {
-        display: none;
-    }
+    font-size: 2rem;
+    color: #222;
 }
 /*Блок с каталогом товара*/
 .box-catalog {
@@ -198,10 +159,8 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-
     width: 1200px;
     max-width: 100%;
-
     padding-top: 25px;
 }
 .box-card-item {
@@ -268,6 +227,8 @@ body {
     margin: 10px;
     text-align: center;
     font-size: 16px;
+    color: #222;
+    text-shadow: #ffffff 1px 0 10px;
 }
 .box-about-us button {
     margin-top: 20px;
@@ -297,12 +258,142 @@ body {
     border: 2px solid #6FCF97;
     text-align: center;
     font-size: 18px;
+    width: 250px;
+}
+.card-advantages-item:hover {
+    border: 2px solid #db5723;
+    transition: 0.5s;
 }
 .card-advantages-item p {
     margin-bottom: 10px;
 }
-@media (max-width: 1024px) {
-    .box-our-advantages {
-        flex-direction: column;
+/*Блок Почему стоит выбрать нас?*/
+.box-why-are-we {
+    margin-top: 5px;
+    width: 1200px;
+    max-width: 100%;
+    height: 300px;
+    background: url('/assets/img-1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 4px solid #6FCF97;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card-why-item {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.800);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-why-item:hover {
+    background: #ffffff;
+    transition: 0.7s;
+}
+.card-why-item p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #6FCF97;
+}
+.card-why-item span {
+    font-size: 1rem;
+}
+
+/*Адаптивность сайта*/
+
+/*-Блок с контактами в шапке сайта*/
+@media (max-width: 576px) {
+    .box-contacts span {
+        font-size: 12px;
+    }
+    .box-contacts .icon {
+        font-size: 1rem;
     }
 }
+/*-Блок с слайдом в шапке*/
+@media (max-width: 768px) {
+    .box-tagline {
+        height: 350px;
+    }
+    .slide-one p {
+        padding: 10rem 2rem 0;
+        font-size: 1.2rem;
+        width: 400px;
+    }
+    .slide-one button {
+        margin: 2rem 3rem 3rem 2rem;
+        padding: 10px 25px 10px 25px;
+    }
+}
+/*-Блок с навигацией сайта*/
+@media (max-width: 992px) {
+    .nav {
+        position: absolute;
+        right: -100%;
+    }
+    .check-btn {
+        display: block;
+    }
+    .close-btn {
+        display: block;
+        color: #fff;
+    }
+    #check:checked ~ .nav {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+        background: #6FCF97;
+        border-bottom-left-radius: 50px;
+        transition: 0.5s;
+        z-index: 1000;
+    }
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .nav-list li {
+        /* margin: 5px; */
+    }
+    .nav-list a {
+        color: #fff;
+    }
+    #check:checked ~ .close-btn {
+        display: block;
+    }
+    #check:checked ~ .check-btn {
+        display: block;
+    }
+}
+/*-Блок с приемуществом*/
+@media (max-width: 1024px) {
+    .box-our-advantages {
+        flex-wrap: wrap;
+    }
+}
+/*-Блок Почему стоит выбрать нас?*/
+@media (max-width: 560px) {
+    .box-why-are-we {
+        flex-wrap: wrap;
+    }
+}
+/*-*/
+
+/*-*/
+
+/*-*/
+
+/*-*/
