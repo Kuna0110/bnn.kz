@@ -14,6 +14,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .container {
     margin: 0 auto;
@@ -51,7 +55,9 @@ body {
     color: #FFF;
 }
 /*Блок с слайдом в шапке*/
-.box-tagline {
+.box-header {
+    flex: 0 0 auto;
+
     width: 1200px;
     max-width: 100%;
     height: 480px;
@@ -90,16 +96,16 @@ body {
 
     width: 1200px;
     max-width: 100%;
-    padding: 20px;
+    padding: 15px;
     position: absolute;
     background: rgba(255, 255, 255, 0.700);
     z-index: 10000;
 }
 .logo {
-    font-family: 'Staatliches', sans-serif;
+    /* font-family: 'Staatliches', sans-serif;
     font-size: 2rem;
     color: #222;
-    transition: all 0.5s;
+    transition: all 0.5s; */
 }
 /*Блок навигации сайта*/
 .nav {
@@ -123,6 +129,7 @@ body {
 }
 .nav-list a:hover {
     color: #db5723;
+    text-decoration: underline;
 }
 #check {
     display: none;
@@ -259,9 +266,11 @@ body {
     text-align: center;
     font-size: 18px;
     width: 250px;
+    transition: 0.5s;
 }
 .card-advantages-item:hover {
     border: 2px solid #db5723;
+    border-radius: 50px;
     transition: 0.5s;
 }
 .card-advantages-item p {
@@ -272,7 +281,7 @@ body {
     margin-top: 5px;
     width: 1200px;
     max-width: 100%;
-    height: 300px;
+    padding: 80px 0 80px 0;
     background: url('/assets/img-1.jpg') no-repeat;
     background-position: center;
     background-size: cover;
@@ -305,10 +314,67 @@ body {
 .card-why-item span {
     font-size: 1rem;
 }
+/*Блок новостей*/
+.box-news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5px;
+}
+.news-item {
+    width: 320px;
+    max-width: 100%;
+    height: 400px;
+}
+.box-news-img {
+    width: 320px;
+    height: 190px;
+    text-align: center;
+}
+.box-news-img img {
+    border-radius: 5px;
+}
+.box-news-title {
+    padding: 10px;
+    font-size: 14px;
+}
+.box-news-date {
+    padding: 10px;
+}
+.box-news-text {
+    padding: 10px;
+}
+.box-news-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-all-news {
+    border: none;
+    background: #6FCF97;
+    cursor: pointer;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    color: #fff;
+}
+.btn-all-news:hover {
+    background: #2ddbdb;
+}
+/*Блок контактов*/
 
-/*Адаптивность сайта*/
 
-/*-Блок с контактами в шапке сайта*/
+
+
+
+footer {
+    flex: 0 0 auto;
+
+    width: 100%;
+    height: 300px;
+    background: #222;
+}
+/*Адаптивность сайта контрольные точки bootstrap 5*/
 @media (max-width: 576px) {
     .box-contacts span {
         font-size: 12px;
@@ -317,9 +383,8 @@ body {
         font-size: 1rem;
     }
 }
-/*-Блок с слайдом в шапке*/
 @media (max-width: 768px) {
-    .box-tagline {
+    .box-header {
         height: 350px;
     }
     .slide-one p {
@@ -332,7 +397,6 @@ body {
         padding: 10px 25px 10px 25px;
     }
 }
-/*-Блок с навигацией сайта*/
 @media (max-width: 992px) {
     .nav {
         position: absolute;
@@ -365,9 +429,6 @@ body {
         width: 100%;
         margin-bottom: 20px;
     }
-    .nav-list li {
-        /* margin: 5px; */
-    }
     .nav-list a {
         color: #fff;
     }
@@ -378,22 +439,30 @@ body {
         display: block;
     }
 }
-/*-Блок с приемуществом*/
 @media (max-width: 1024px) {
     .box-our-advantages {
         flex-wrap: wrap;
     }
-}
-/*-Блок Почему стоит выбрать нас?*/
-@media (max-width: 560px) {
     .box-why-are-we {
         flex-wrap: wrap;
     }
+    .card-why-item {
+        width: 150px;
+        height: 150px;
+    }
+    .box-news {
+        flex-wrap: wrap;
+    }
+    .news-item {
+        width: 300px;
+        max-width: 100%;
+    }
+    .box-news-img {
+        width: 300px;
+        max-width: 100%;
+    }
+
 }
-/*-*/
+@media (max-width: 1200px) {
 
-/*-*/
-
-/*-*/
-
-/*-*/
+}
