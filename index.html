@@ -24,50 +24,50 @@
     </div>
   </div>
 
-  <div class="container">
-    <header class="box-header">
-      <div class="container">
-        <div class="box-nav">
-          <div class="logo">
-            <img src="assets/logo.svg" alt="Сайт компании bnn.kz">
-            <!-- <span>Bnn.kz</span> -->
-          </div>
-          <input type="checkbox" id="check" />
-          <label for="check" class="check-btn">
-            <i class="bi bi-list" alt="Открыть меню"></i>
-          </label>
-          <nav class="nav">
-            <ul class="nav-list">
-              <li style="text-align: right;">
-                <label for="check" class="close-btn">
-                  <i class="bi bi-x-circle" alt="Закрыть меню"></i>
-                </label>
-              </li>
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Каталог</a></li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
+  <header class="box-header">
+    <div class="box-nav-inner">
+      <div class="box-nav-item">
+        <div class="logo">
+          <span>Bnn.kz</span>
         </div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="check-btn">
+          <i class="bi bi-list" alt="Открыть меню"></i>
+        </label>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li style="text-align: right;">
+              <label for="check" class="close-btn">
+                <i class="bi bi-x-circle" alt="Закрыть меню"></i>
+              </label>
+            </li>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
+    </div>
+    <div class="container">
       <div class="slider-box">
         <div class="slide-one">
           <p>Стройматериалы по доступным ценам в городе Нур-Султан</p>
           <button>Заказать звонок</button>
         </div>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
+
 
   <div class="box-title">
     <p>Каталог</p>
   </div>
 
-  <div class="container">
-    <section class="box-catalog">
-      <div class="box-card">
+  <section class="box-catalog">
+    <div class="container">
+      <div class="box-card-inner">
         <div class="box-card-item">
           <div class="box-img">
             <img src="assets/catalog/img-1.jpg" alt="Отделочные материалы" width="246px" height="165px" />
@@ -157,173 +157,219 @@
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <div class="box-title">
     <p>О нас</p>
   </div>
 
-  <div class="container">
-    <section class="box-about-us">
-      <p>
-        <strong>
-          Текст о компании – это идеальная возможность для отстройки от
-          конкурентов. Нужно оперировать фактами. Пусть их будет немного, но
-          именно они будут демонстрировать уникальность вашей компании.
-        </strong>
-      </p>
-      <br />
-      <p>
-        <strong>
-          Шаблон написания текста о компании: чем занимаемся; что у нас
-          получается лучше всего; примеры наших работ; в чём отличие компании;
-          наша команда в лицах; наша компания в цифрах; что о нас говорят
-          клиенты; какие гарантии мы даём.
-        </strong>
-      </p>
-      <button type="button" class="btn-about-as" id="btn-about-as">Связаться с нами</button>
-    </section>
-  </div>
+  <section class="box-about-us">
+    <div class="container">
+      <div class="about-us-inner">
+        <p>
+          <strong>
+            Текст о компании – это идеальная возможность для отстройки от
+            конкурентов. Нужно оперировать фактами. Пусть их будет немного, но
+            именно они будут демонстрировать уникальность вашей компании.
+          </strong>
+        </p>
+        <br />
+        <p>
+          <strong>
+            Шаблон написания текста о компании: чем занимаемся; что у нас
+            получается лучше всего; примеры наших работ; в чём отличие компании;
+            наша команда в лицах; наша компания в цифрах; что о нас говорят
+            клиенты; какие гарантии мы даём.
+          </strong>
+        </p>
+        <button type="button" class="btn-about-as" id="btn-about-as">Связаться с нами</button>
+      </div>
+    </div>
+  </section>
 
   <div class="box-title">
     <p>Наши преимущества</p>
   </div>
 
-  <div class="container">
-    <section class="box-our-advantages">
-      <div class="card-advantages-item">
-        <img src="/assets/advantages/prices.png" width="200px" height="200px" alt="Актуальные цены" />
-        <p>Актуальные цены</p>
+  <section class="box-our-advantages">
+    <div class="container">
+      <div class="our-advantages-inner">
+        <div class="card-advantages-item">
+          <img src="/assets/advantages/prices.png" width="200px" height="200px" alt="Актуальные цены" />
+          <p>Актуальные цены</p>
+        </div>
+        <div class="card-advantages-item">
+          <img src="/assets/advantages/assortment.png" width="200px" height="200px" alt="Большой ассортимент" />
+          <p>Большой ассортимент</p>
+        </div>
+        <div class="card-advantages-item">
+          <img src="/assets/advantages/goods.png" width="200px" height="200px" alt="Товары оптом" />
+          <p>Товары оптом</p>
+        </div>
       </div>
-      <div class="card-advantages-item">
-        <img src="/assets/advantages/assortment.png" width="200px" height="200px" alt="Большой ассортимент" />
-        <p>Большой ассортимент</p>
-      </div>
-      <div class="card-advantages-item">
-        <img src="/assets/advantages/goods.png" width="200px" height="200px" alt="Товары оптом" />
-        <p>Товары оптом</p>
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <div class="box-title">
     <p>Почему стоит выбрать нас?</p>
   </div>
 
-  <div class="container">
-    <section class="box-why-are-we">
-      <div class="card-why-item">
-        <p>5</p>
-        <span>Лет</span>
+  <section class="box-why-are-we">
+    <div class="container">
+      <div class="why-are-we-inner">
+        <div class="card-why-item">
+          <p>5</p>
+          <span>Лет</span>
+        </div>
+        <div class="card-why-item">
+          <p>999</p>
+          <span>Клиентов</span>
+        </div>
+        <div class="card-why-item">
+          <p>15</p>
+          <span>Фирм</span>
+        </div>
+        <div class="card-why-item">
+          <p>555</p>
+          <span>Чашек кофе</span>
+        </div>
       </div>
-      <div class="card-why-item">
-        <p>999</p>
-        <span>Клиентов</span>
-      </div>
-      <div class="card-why-item">
-        <p>15</p>
-        <span>Фирм</span>
-      </div>
-      <div class="card-why-item">
-        <p>555</p>
-        <span>Чашек кофе</span>
-      </div>
-    </section>
-  </div>
-
-  <!-- <div class="box-title">
-    <p>Отзывы</p>
-  </div> -->
-
-  <!-- <div class="container"></div> -->
+    </div>
+  </section>
 
   <div class="box-title">
     <p>Новости</p>
   </div>
 
-  <div class="container">
-    <section class="box-news">
-      <div class="news-item">
-        <div class="box-news-img">
-          <img src="assets/news/news-1.jpg" width="100%" height="100%" alt="">
+
+  <section class="box-news">
+    <div class="container">
+      <div class="box-news-inner">
+        <div class="news-item">
+          <div class="box-news-img">
+            <img src="assets/news/news-1.jpg" width="100%" height="100%" alt="">
+          </div>
+          <div class="box-news-title">
+            <h3>Заголовок новостей №1</h3>
+          </div>
+          <div class="box-news-date">
+            <span>25.12.2021</span>
+          </div>
+          <div class="box-news-text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima debitis in porro quisquam fugit, modi
+              officiis ratione, deserunt assumenda eligendi quia ipsum quasi ad asperiores harum reiciendis nulla
+              numquam
+              rem!</p>
+          </div>
         </div>
-        <div class="box-news-title">
-          <h3>Заголовок новостей №1</h3>
+        <div class="news-item">
+          <div class="box-news-img">
+            <img src="assets/news/news-1.jpg" width="100%" height="100%" alt="">
+          </div>
+          <div class="box-news-title">
+            <h3>Заголовок новостей №1</h3>
+          </div>
+          <div class="box-news-date">
+            <span>25.12.2021</span>
+          </div>
+          <div class="box-news-text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima debitis in porro quisquam fugit, modi
+              officiis ratione, deserunt assumenda eligendi quia ipsum quasi ad asperiores harum reiciendis nulla
+              numquam
+              rem!</p>
+          </div>
         </div>
-        <div class="box-news-date">
-          <span>25.12.2021</span>
-        </div>
-        <div class="box-news-text">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima debitis in porro quisquam fugit, modi officiis ratione, deserunt assumenda eligendi quia ipsum quasi ad asperiores harum reiciendis nulla numquam rem!</p>
+        <div class="news-item">
+          <div class="box-news-img">
+            <img src="assets/news/news-1.jpg" width="100%" height="100%" alt="">
+          </div>
+          <div class="box-news-title">
+            <h3>Заголовок новостей №1</h3>
+          </div>
+          <div class="box-news-date">
+            <span>25.12.2021</span>
+          </div>
+          <div class="box-news-text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima debitis in porro quisquam fugit, modi
+              officiis ratione, deserunt assumenda eligendi quia ipsum quasi ad asperiores harum reiciendis nulla
+              numquam
+              rem!</p>
+          </div>
         </div>
       </div>
-      <div class="news-item">
-        <div class="box-news-img">
-          <img src="assets/news/news-1.jpg" width="100%" height="100%" alt="">
-        </div>
-        <div class="box-news-title">
-          <h3>Заголовок новостей №1</h3>
-        </div>
-        <div class="box-news-date">
-          <span>25.12.2021</span>
-        </div>
-        <div class="box-news-text">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima debitis in porro quisquam fugit, modi officiis ratione, deserunt assumenda eligendi quia ipsum quasi ad asperiores harum reiciendis nulla numquam rem!</p>
-        </div>
-      </div>
-      <div class="news-item">
-        <div class="box-news-img">
-          <img src="assets/news/news-1.jpg" width="100%" height="100%" alt="">
-        </div>
-        <div class="box-news-title">
-          <h3>Заголовок новостей №1</h3>
-        </div>
-        <div class="box-news-date">
-          <span>25.12.2021</span>
-        </div>
-        <div class="box-news-text">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima debitis in porro quisquam fugit, modi officiis ratione, deserunt assumenda eligendi quia ipsum quasi ad asperiores harum reiciendis nulla numquam rem!</p>
-        </div>
-      </div>
-    </section>
+    </div>
     <div class="box-news-btn">
       <button type="button" class="btn-all-news">Все новости</button>
     </div>
-  </div>
+  </section>
 
   <div class="box-title">
     <p>Контакты</p>
   </div>
 
-  <div class="container">
-    <div class="box-contacts-bottom">
-      <div class="text-contacts-inner">
-        <div class="contacts-item">
-          <h3>Адрес</h3>
-          <p>г. Нур-Султан ул. Абая 33/4</p>
+  <section class="box-contacts-bottom">
+    <div class="container">
+      <div class="contacts-bottom">
+        <div class="contacts-inner">
+          <div class="contacts-item">
+            <h3>Адрес <i class="bi bi-geo-alt"></i></h3>
+            <p>г. Нур-Султан ул. Абая 33/4</p>
+          </div>
+          <div class="contacts-item">
+            <h3>Телефон <i class="bi bi-telephone"></i></h3>
+            <p><a href="tel:+77025555555">+7(702)555-55-55</a></p>
+          </div>
+          <div class="contacts-item">
+            <h3>Email <i class="bi bi-envelope"></i></h3>
+            <p><a href="mailto:www@mail.kz">www@mail.kz</a></p>
+          </div>
+          <div class="contacts-item-btn">
+            <button type="button" class="btn-contacts-bottom">Напишите нам</button>
+          </div>
         </div>
-        <div class="contacts-item">
-          <h3>Телефон</h3>
-          <p>+7(702)555-55-55</p>
+        <div class="location-contacts-inner">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160182.53790847273!2d71.33930786685511!3d51.1480774221867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424580c47db54609%3A0x97f9148dddb19228!2z0J3Rg9GALdCh0YPQu9GC0LDQvSAwMjAwMDA!5e0!3m2!1sru!2skz!4v1640696460626!5m2!1sru!2skz"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="contacts-item">
-          <h3>Email</h3>
-          <p>www@mail.kz</p>
-        </div>
-      </div>
-      <div class="location-contacts-inner">
-        
       </div>
     </div>
-  </div>
+  </section>
 
   <footer>
-
+    <div class="container">
+      <div class="box-footer">
+        <div class="footer-menu">
+          <p>Навигация</p>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li><i class="bi bi-instagram"></i></li>
+            <li><i class="bi bi-facebook"></i></li>
+            <li><i class="bi bi-twitter"></i></li>
+            <li><i class="bi bi-whatsapp"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box-frilancer">
+        <span>2022 - Разработчик сайта: <a href="mailto:sardar.kuna@gmail.com">sardar.kuna@gmail.com</a></span>
+      </div>
+    </div>
   </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 
